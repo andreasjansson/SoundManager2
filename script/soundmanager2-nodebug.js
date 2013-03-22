@@ -1852,6 +1852,9 @@ function SoundManager(smURL, smID) {
     if (sm2.noSWFCache) {
       url += ('?ts=' + new Date().getTime());
     }
+    else {
+      url += '?v=' + sm2.versionNumber;
+    }
     return url;
   };
   setVersionInfo = function() {
